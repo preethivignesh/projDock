@@ -1,4 +1,4 @@
-FROM ubuntu: 17.10
+FROM ubuntu:17.10
 MAINTAINER Raghuveer.M <raghuveer.mudiraj@gmail.com>
  
 #Update Repository
