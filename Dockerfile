@@ -14,11 +14,11 @@ RUN apt-get install -y apache2
 RUN apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip
  
 #Copy Application Files
-RUN sudo rm -rf /var/www/html/*
+RUN rm -rf /var/www/html/*
 ADD ../projCert/website /var/www/html
  
 #Configure Apache (Optional)
-RUN sudo chown -R www-data:www-data /var/www
+RUN chown -R www-data:www-data /var/www
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
