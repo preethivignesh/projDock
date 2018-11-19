@@ -1,6 +1,9 @@
 FROM ubuntu:17.10
 MAINTAINER Raghuveer.M <raghuveer.mudiraj@gmail.com>
- 
+
+ENV http_proxy "http://194.138.0.26:9400"
+ENV https_proxy "http://194.138.0.26:9400"
+
 #Update Repository
 RUN apt-get update -y
  
