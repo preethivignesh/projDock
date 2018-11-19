@@ -11,7 +11,7 @@ RUN apt-get update -y
 RUN apt-get install -y apache2
  
 #Install PHP Modules
-RUN apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
+RUN apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip
  
 #Copy Application Files
 RUN sudo rm -rf /var/www/html/*
