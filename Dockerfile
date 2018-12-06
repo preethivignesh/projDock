@@ -15,7 +15,7 @@ RUN apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common php
  
 #Copy Application Files
 RUN rm -rf /var/www/html/*
-ADD ../projCert/website /var/www/html
+ADD website /var/www/html
  
 #Configure Apache (Optional)
 RUN chown -R www-data:www-data /var/www
